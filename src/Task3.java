@@ -13,14 +13,12 @@ public class Task3 {
         System.out.println("Inverse matrix as follows for given numbers");
         System.out.print("Enter number of rows-  ");
         row=sc.nextInt();
-        System.out.print("Enter number of columns- ");
-        column=sc.nextInt();
 
         for(int i=0;i<row;i++){
             for(int j=0;j<=i;j++){
                 System.out.print(number1);
             }
-            for(int k=column -1;k>i;k--){
+            for(int k=row -1;k>=i;k--){
                 System.out.print(number2);
             }
             System.out.println();
