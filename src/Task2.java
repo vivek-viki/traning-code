@@ -1,14 +1,15 @@
 import java.util.Scanner;
 
 public class Task2 {
-    public static void main(String asrgs[])
+    public static void main(String args[])
     {
         int mon,tue,wed,thu,fri,sat,sun;
         int roimon,roitue,roiwed, roithu, roifri, bonus, bonusamount, extrabouns = 0;
         int totalhours, extrahours, totalamount;
         Scanner sc = new Scanner(System.in);
+
         System.out.print("Enter Monday working hours- ");
-        mon = sc.nextInt();
+           mon = sc.nextInt();
         System.out.print("Enter Tuesday working hours- ");
         tue = sc.nextInt();
         System.out.print("Enter wednesday working hours- ");
