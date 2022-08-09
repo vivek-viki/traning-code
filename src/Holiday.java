@@ -17,7 +17,7 @@ public class Holiday {
     }
 
     public  double avgDate(Holiday[] hol) {
-        int sum = 0;
+        double sum = 0;
         for(int i = 0; i < hol.length; i++) {
             sum = sum + hol[i].day;
         }
@@ -28,6 +28,12 @@ public class Holiday {
     {
         Holiday holiday = new Holiday("Independence Day", 4, "July");
         Holiday holiday1 = new Holiday("Independence Day", 4, "AUG");
+        Holiday array[];
+        array = new Holiday[2];
+        array[0] = holiday;
+        array[1] = holiday1;
+
         System.out.println("Months are equal or not - " +holiday.isSameMonth(holiday1));
+        System.out.println("avg of date - " + holiday.avgDate(array));
     }
 }
